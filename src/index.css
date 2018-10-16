@@ -30,6 +30,17 @@ code {
   font-size: 19px;
   text-transform: uppercase;
 }
+.navigation-button {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  background: teal;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  min-width: 200px;
+}
 
 /* topics css */
 .topics-wrapper {
