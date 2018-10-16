@@ -12,3 +12,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* navigation css */
+.navigation {
+  list-style: none;
+  display: flex;
+  background: teal;
+  margin: 0;
+  padding: 30px;
+}
+.navigation>li {
+  margin-right: 20px;
+}
+.navigation>li>a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+/* topics css */
+.topics-wrapper {
+
+}
+.topics {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.topics>ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
