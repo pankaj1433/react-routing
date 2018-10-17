@@ -1,10 +1,12 @@
 import React from 'react';
-import { Prompt } from "react-router-dom";
+import Topic from './Topic';
+import { Prompt, Route, Link } from "react-router-dom";
 
 class Home extends React.Component {
   
     state = { 
-        allowNavigation: true 
+        allowNavigation: true ,
+        topic: 'Routing'
     };
 
     toggleNavigation = () => {
@@ -14,7 +16,7 @@ class Home extends React.Component {
     };
 
     render() {
-        let {allowNavigation} = this.state;
+        let {allowNavigation, topic} = this.state;
         return (
             <div>
                 <h2>Home</h2>
@@ -25,6 +27,10 @@ class Home extends React.Component {
                     when={!allowNavigation}
                     message={location => `Are you sure you want to redirect` }
                     />
+                <br/>
+                <Link to={'/home/topic'}>Topic</Link>
+                <Route path="/home/topic" render={props => <Topic topic={topic}/>} />
+            
             </div>
         );
     };
