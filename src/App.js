@@ -14,12 +14,13 @@ class App extends Component {
 
               <Switch>
 
-                <Route exact path="/" component={Home} />
+                <Route path="/home" component={Home} />
                 <Redirect from="/contact" to="/about" />
                 <Route path="/about" component={About} />
                 <Route path="/auth" component={AuthExample}/>
                 <Route path="/topics" component={Topics} />
                 <Route component={NoMatch} />
+                <Redirect from="/" to="/home"/>
 
               </Switch>
 
