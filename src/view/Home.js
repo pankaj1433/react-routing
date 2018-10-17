@@ -28,7 +28,7 @@ class Home extends React.Component {
                     message={location => `Are you sure you want to redirect` }
                     />
                 <br/>
-                <Link to={'/home/topic'}>Topic</Link>
+                <Link to="/home/topic">Topic</Link>
                 <Route path="/home/topic" render={props => <Topic topic={topic}/>} />
             
             </div>
