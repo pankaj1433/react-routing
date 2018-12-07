@@ -1,7 +1,10 @@
 import React from 'react';
 import { Route, Link } from "react-router-dom";
 
-const Topics = ({ match }) => (
+const Topics = (props) => {
+    console.log(props,'props from topics')
+    let {match} = props;
+return (
     <div className="topics-wrapper">
         <h2>Topics</h2>
         <div className="topics">
@@ -25,7 +28,7 @@ const Topics = ({ match }) => (
         </div>
     </div>
 );
-  
+}
 const Topic = ({ match }) => (
     <div>
         <h3>Topic Name: {match.params.topicId}</h3>
