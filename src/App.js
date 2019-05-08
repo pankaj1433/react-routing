@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
 import './App.css';
 import Navigation from './components/navigation';
-import {Home, About, Topics, NoMatch, AuthExample} from './view';
+import {Home, About, Topics, AuthExample} from './view';
 
 class App extends Component {
   render() {
